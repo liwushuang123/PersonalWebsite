@@ -1,0 +1,7 @@
+{
+  "id": "2026-02-13-my-first-vibe-coding-project-vocabapp",
+  "title": "My first vibe coding project - VocabApp",
+  "date": "2026-02-13",
+  "content": "Lessons Learned\n\n1. \"Reversing a dictionary\" is not the same as \"building a translation tool\"\n\nCC-CEDICT is an excellent Chinese→English dictionary, but using it backwards (English→Chinese) created fundamental accuracy problems. A word like \"aggregate\" appears in many CEDICT entries across different domains — and the most common English meaning rarely corresponds to the highest-scoring Chinese match. The lesson: when possible, use a tool designed for the exact job you need, rather than repurposing an adjacent tool. The final solution — using an actual translation API as primary, with the dictionary as a fallback — was both simpler and more accurate.\n\n2. Touch interaction on mobile is much harder than it looks\n\nWhat seems like a simple feature (\"tap a word to look it up\") requires handling a web of competing gestures: tap vs. long-press vs. scroll vs. page-flip vs. pinch-to-zoom. Every gesture the app wants to use must be carefully carved out from what the browser already does with touch input. The long-press approach (400ms threshold, 10px movement tolerance) emerged after iteration — it's long enough to feel intentional but short enough to not feel slow.",
+  "excerpt": "Lessons Learned\n\n1. \"Reversing a dictionary\" is not the same as \"building a translation tool\"\n\nCC-CEDICT is an excellent Chinese→English dictionary, b..."
+}
